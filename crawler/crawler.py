@@ -81,9 +81,9 @@ while queue and len(visited) < MAX_PAGES:
 
         # Avoid duplicates
         if full_url not in visited:
-            queue.append(full_url)
+            queue.append(full_url) 
 
-    time.sleep(1)  # be polite
+    time.sleep(1)
 
 # ---- SAVE DATA ----
 with open("data/pages.json", "w", encoding="utf-8") as f:
